@@ -1,9 +1,10 @@
 import React from "react";
+import GraphicEqIcon from '@material-ui/icons/GraphicEq';
 
 const Header = () => {
   return (
     <header>
-      <h1>HyperNotes</h1>
+      <h1><GraphicEqIcon /> HyperNote</h1>
     </header>
   );
 };

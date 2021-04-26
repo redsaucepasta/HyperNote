@@ -7,7 +7,10 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: #2d3436;
+  /* background: #2d3436; */
+  background-color: #2d3436;
+background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   padding: 0;
 }
 
@@ -67,12 +70,13 @@ footer p {
   color: #f5ba13;
   border: none;
   /* width: 36px; */
-  height: 36px;
+  /* height: 36px; */
   cursor: pointer;
   outline: none;
+  padding: 10px;
 }
 
-form {
+/* form {
   position: relative;
   width: 50%;
   margin: 30px auto 20px auto;
@@ -80,14 +84,9 @@ form {
   padding: 15px;
   border-radius: 7px;
   /* box-shadow: 0 1px 5px rgb(138, 137, 137); */
-}
-@media only screen and (max-width: 600px) {
-  form {
-    width: 90%;
-  }
-}
 
-form input,
+
+/* form input,
 form textarea, form input[placeholder] {
   width: 100%;
   border: none;
@@ -112,8 +111,55 @@ form button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
+} */
+
+
+
+
+form.create-note {
+  position: relative;
+  width: 50%;
+  margin: 30px auto 20px auto;
+  background: #636e72;
+  padding: 15px;
+  border-radius: 7px;
+  /* box-shadow: 0 1px 5px rgb(138, 137, 137); */
+}
+
+
+@media only screen and (max-width: 600px) {
+  form.create-note {
+    width: 90%;
+  }
+}
+
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+  background: #636e72;
+  color: #fff;
+}
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
 }
 
 ::placeholder{
-  color: #fff;
+  color: #aeb9bd;
 }
