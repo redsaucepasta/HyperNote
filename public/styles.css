@@ -9,8 +9,8 @@ html {
 body {
   /* background: #2d3436; */
   background-color: #2d3436;
-background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   padding: 0;
 }
 
@@ -20,7 +20,7 @@ header {
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 32px;
-  padding-left: 0
+  padding-left: 0;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -28,6 +28,7 @@ header h1 {
   color: #fff;
   /* font-family: "McLaren", cursive; */
   font-weight: 200;
+  margin-left: 20px;
 }
 
 footer {
@@ -46,7 +47,7 @@ footer p {
   border-radius: 7px;
   /* box-shadow: 0 2px 5px #ff8303; */
   padding: 10px;
-  width: 240px;
+  width: 280px;
   margin: 16px;
   float: left;
   color: #dfe6e9;
@@ -85,7 +86,6 @@ footer p {
   border-radius: 7px;
   /* box-shadow: 0 1px 5px rgb(138, 137, 137); */
 
-
 /* form input,
 form textarea, form input[placeholder] {
   width: 100%;
@@ -113,9 +113,6 @@ form button {
   outline: none;
 } */
 
-
-
-
 form.create-note {
   position: relative;
   width: 50%;
@@ -126,10 +123,13 @@ form.create-note {
   /* box-shadow: 0 1px 5px rgb(138, 137, 137); */
 }
 
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 620px) {
   form.create-note {
     width: 90%;
+  }
+  .note {
+    width: 90%;
+    margin-left: 5%;
   }
 }
 
@@ -160,6 +160,6 @@ form.create-note button {
   outline: none;
 }
 
-::placeholder{
+::placeholder {
   color: #aeb9bd;
 }
