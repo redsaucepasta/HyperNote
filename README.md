@@ -1,4 +1,4 @@
-# HyperNotes
+# HyperNote
 ## A minimalist notes web app created using React.js
 ![image](https://user-images.githubusercontent.com/66895829/116031059-8c992600-a67a-11eb-9d38-d6b1ec52d4c1.png)
 
